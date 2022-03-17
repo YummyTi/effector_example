@@ -1,12 +1,14 @@
-import React from 'react';
+import React from "react";
 import logo from "../../assets/icons/effector-logo.svg";
-import {Counter} from "../../features/counter/Counter";
-import './home.css'
+import { Counter } from "../../features/counter/Counter";
+import MapY from "../../features/mapY/MapY";
+import "./home.css";
 
 export const Home: React.FC = () => {
-    return (
-        <main className="page page--home">
-            <section className="hero">
+  return (
+    <main className="page page--home">
+      <MapY />
+      {/* <section className="hero">
                 <img src={logo} className="hero__logo" alt="logo" />
                 <Counter className="hero__counter" />
                 <p>
@@ -20,8 +22,7 @@ export const Home: React.FC = () => {
                 >
                     Learn Effector
                 </a>
-            </section>
-        </main>
-    );
+            </section> */}
+    </main>
+  );
 };
-
